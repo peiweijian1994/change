@@ -1,0 +1,51 @@
+.chatRoom{
+    // height: 460px;
+    height: 100%;
+    padding-left:2px; 
+    .roomTitle{
+        height: 60px;
+        border-bottom: 1px solid #ccc;
+        line-height: 40px;
+        padding-left: 10px;
+        p{
+            line-height: 60px;
+            font-size: 32px;
+        }
+    }
+    .content{
+        height: calc(100% - 180px);
+        overflow: hidden;
+    }
+    .inputBox{
+        height: 120px;
+        border-top:1px solid #ccc;
+        .operation{
+            height: 24px;
+            span{
+                display: inline-block;
+                line-height: 26px;
+                font-size: 20px;
+                width: 30px;
+                margin-left: 6px;
+                cursor: pointer;
+            }
+        }
+        .inputContent{
+            padding: 4px;
+            textarea{
+                border: 0px;
+                resize:none;
+            }
+            textarea:focus{
+                border: 0px;
+                box-shadow:none;
+            }
+        } 
+        .inputBtn{
+            width: 99%;
+            button{
+                float: right;
+            }
+        }
+    }
+}

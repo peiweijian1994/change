@@ -1,0 +1,55 @@
+.sendMessageInfo{
+    overflow: hidden;
+    margin-top: 2px;
+    .userFace{
+        padding-top: 6px;
+        float: left;
+    }
+    .bubble{
+        // overflow: hidden;
+        float: left;
+        max-width: 60%;
+        margin-left: 6px;
+        margin-top: 6px;
+        .horn{
+            top: 8px;
+            left: 6px;
+            background: #ccc;
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+            position: absolute;
+            display: block;
+        }
+        .bubbleContent{
+            background: #ccc;
+            padding: 4px 6px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            // left: 10px;
+            // position: absolute;
+            .content{
+                line-height: 24px;
+                .ellipsis {
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: 150px;
+                    float: right;
+                }
+                pre {
+                    white-space: pre-wrap;
+                    background-color: rgba(0, 0, 0, 0);
+                    border: none;
+                    border-radius: none;
+                    font-size: 14px;
+                    padding: 4px;
+                    margin: 0px;
+                    line-height: 14px;
+                    font-family: "Microsoft YaHei";
+                }
+            }
+        }
+    }
+}

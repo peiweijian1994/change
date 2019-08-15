@@ -16,7 +16,7 @@
     // 这个方法就被调用
     app.on('ready', function() {
         // 创建浏览器窗口。
-        mainWindow = new BrowserWindow({width: 800, height: 600});
+        mainWindow = new BrowserWindow({width: 880, height: 680});
         // 加载应用的 index.html
         // 'D:\\FWQ\\htdocs\\textPy\\item\\src\\browser\\index.html'
         mainWindow.loadURL('http://localhost:9006/');

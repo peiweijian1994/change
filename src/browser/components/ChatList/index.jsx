@@ -22,6 +22,9 @@ class ChatList extends Component {
     getMyFriendList(){
 
     }
+    Chatroom(){
+        
+    }
     render() {
         let chats=[{a:"1"},{a:"1"},{a:"1"},{a:"1"},{a:"1"},{a:"1"},{a:"1"},{a:"1"},{a:"1"},{a:"1"},{a:"1"},{a:"1"},{a:"1"},{a:"1"},{a:"1"}]
         let state = this.state
@@ -41,7 +44,7 @@ class ChatList extends Component {
                         autoHideDuration={200}
                         autoHeightMax={state.number}
                     >
-                        {chats.map((chat,i)=> <Chat key={i} onclick="Chatroom()"/> )}
+                        {chats.map((chat,i)=> <Chat key={i} onclick={this.Chatroom()}/> )}
                         <div className='clear'></div>
                     </Scrollbars>
                 </div>

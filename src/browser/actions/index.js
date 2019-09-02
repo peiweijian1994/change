@@ -4,8 +4,9 @@ import SocketServer from "./socket";
 // import PanelService from "./panelact";
 // import AddAppService from "./addapp";
 // import AppDetailService from "./appdetailact";
-
+import LoginService from './axios/loginService'
 
 export {
-    SocketServer
+    SocketServer,
+    LoginService
 };

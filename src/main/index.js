@@ -19,7 +19,7 @@
         mainWindow = new BrowserWindow({width: 880, height: 680});
         // 加载应用的 index.html
         // 'D:\\FWQ\\htdocs\\textPy\\item\\src\\browser\\index.html'
-        mainWindow.loadURL('http://localhost:9006/');
+        mainWindow.loadURL('http://localhost:9006/#/login');
         // 打开开发工具
         mainWindow.openDevTools();
         // 当 window 被关闭，这个事件会被发出

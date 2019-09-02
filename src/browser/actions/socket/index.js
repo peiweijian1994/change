@@ -3,7 +3,7 @@ class SocketServer{
 
     constructor(){
         this.socketIo = null;
-        this.socket = io('http://127.0.0.1:1987',{transports:['websocket','xhr-polling','jsonp-polling']});
+        this.socket = io('http://127.0.0.1:3000',{transports:['websocket','xhr-polling','jsonp-polling']});
         console.log('11111')
     }
     static Instance;

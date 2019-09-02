@@ -4,7 +4,12 @@ import {
     Form, Icon, Input, Button, Checkbox,
 } from 'antd';
 import './index.less';
+import {LoginService} from '../../actions/index';
 class Login extends Component {
+    constructor(prop){
+        super(prop)
+
+    }
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.form.validateFields((err, values) => {
@@ -12,6 +17,10 @@ class Login extends Component {
                 console.log('Received values of form: ', values);
             }
         });
+    }
+    login(){
+
+
     }
     render() {
         const { getFieldDecorator } = this.props.form;
@@ -39,7 +48,7 @@ class Login extends Component {
                     <Checkbox>Remember me</Checkbox>
                 )}
                 <a className="login-form-forgot" href="">Forgot password</a>
-                <Button type="primary" htmlType="submit" className="login-form-button">
+                <Button type="primary" htmlType="submit" onClick={this.login()} className="login-form-button">
                     Log in
                 </Button>
                 Or <a href="">register now!</a>

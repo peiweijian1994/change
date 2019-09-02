@@ -3,6 +3,7 @@ import {
     //Router,  //BrowserRouter 为通过hash值来切换路由
     Redirect,
     Switch,
+    Route,
     HashRouter as Router,
 } from 'react-router-dom';
 import RouteWithSubRoutes from "../components/RouteWithSubRoutes/index.jsx";
@@ -52,6 +53,8 @@ class Main extends Component {
                     <div className="main_layout height100">
                         <Switch>
                             {routes.map((route, i) => <RouteWithSubRoutes key={i} {...route} />)}
+                            <Route path="/home/chat" component={ChatContent} />
+                            <Route path="/login" component={LoginRegister} />
                             <Redirect path="/" to={{ pathname: "/home/chat"}} />
                             {/* <Redirect path="/" to={{ pathname: "/login"}} />                         */}
                         </Switch>

@@ -10,7 +10,7 @@ class ChatContent extends Component {
         super(prop)
     }
     chatroom(obj){
-
+        
     }
     render() {
         return (

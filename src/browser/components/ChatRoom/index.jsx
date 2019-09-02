@@ -9,11 +9,24 @@ import {SocketServer} from "../../actions/index.js"
 
 const { TextArea } = Input;
 class ChatRoom extends Component {
+    state = {
+        num : 0
+    }
     constructor(porps){
         super(porps)
     }
     sendMessage(){
-        SocketServer.instance.socket.emit('pvp', {msg:'hi, server'});
+        this.setState({
+            num: 3
+        })
+        this.setState({
+            num: 2
+        })
+        this.setState({
+            num: 0
+        })
+        console.log(this.state.num)
+        // SocketServer.instance.socket.emit('pvp', {msg:'hi, server'});
     }
     render() {
         return (
